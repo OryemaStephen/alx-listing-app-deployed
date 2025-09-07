@@ -1,4 +1,4 @@
-import { Reviews, ReviewSectionProps } from "@/interfaces";
+import { ReviewSectionProps } from "@/interfaces";
 
 const ReviewSection = ({ reviews }: ReviewSectionProps) => {
   if (!reviews?.length) return <p>No reviews yet.</p>;
