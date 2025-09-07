@@ -27,6 +27,7 @@ const HEROSECTION_BG_IMAGE = '/assets/images/homepage_background1.png';
 const HOUSE = '/assets/images/house.png';
 const PROPERTYLISTINGSAMPLE = [
     {
+        id: 1,
         name: "Villa Ocean Breeze",
         address: {
             state: "Seminyak",
@@ -75,6 +76,7 @@ const PROPERTYLISTINGSAMPLE = [
         }
     },
     {
+        id: 2,
         name: "Mountain Escape Chalet",
         address: {
             state: "Aspen",
@@ -123,6 +125,7 @@ const PROPERTYLISTINGSAMPLE = [
         }
     },
     {
+        id: 3,
         name: "Cozy Desert Retreat",
         address: {
             state: "Palm Springs",
@@ -170,6 +173,7 @@ const PROPERTYLISTINGSAMPLE = [
         }
     },
     {
+        id: 4,
         name: "City Lights Penthouse",
         address: {
             state: "New York",
@@ -218,6 +222,7 @@ const PROPERTYLISTINGSAMPLE = [
         }
     },
     {
+        id: 5,
         name: "Riverside Cabin",
         address: {
             state: "Queenstown",
@@ -265,6 +270,7 @@ const PROPERTYLISTINGSAMPLE = [
         }
     },
     {
+        id: 6,
         name: "Modern Beachfront Villa",
         address: {
             state: "Sidemen",
@@ -313,6 +319,7 @@ const PROPERTYLISTINGSAMPLE = [
         }
     },
     {
+        id: 7,
         name: "Lakeside Chalet",
         address: {
             state: "Banff",
@@ -361,6 +368,7 @@ const PROPERTYLISTINGSAMPLE = [
         }
     },
     {
+        id: 8,
         name: "Tropical Garden Villa",
         address: {
             state: "Koh Samui",
@@ -408,6 +416,7 @@ const PROPERTYLISTINGSAMPLE = [
         }
     },
     {
+        id: 9,
         name: "Urban Loft",
         address: {
             state: "Berlin",
@@ -456,6 +465,7 @@ const PROPERTYLISTINGSAMPLE = [
         }
     },
     {
+        id: 10,
         name: "Secluded Forest Cabin",
         address: {
             state: "Whistler",
@@ -504,6 +514,7 @@ const PROPERTYLISTINGSAMPLE = [
         }
     },
     {
+        id: 11,
         name: "Cliffside Villa",
         address: {
             state: "Amalfi",
@@ -552,6 +563,7 @@ const PROPERTYLISTINGSAMPLE = [
         }
     },
     {
+        id: 12,
         name: "Coastal Escape Villa",
         address: {
             state: "Noosa",
@@ -600,6 +612,7 @@ const PROPERTYLISTINGSAMPLE = [
         }
     },
     {
+        id: 13,
         name: "Downtown Apartment",
         address: {
             state: "Tokyo",
@@ -648,6 +661,7 @@ const PROPERTYLISTINGSAMPLE = [
         }
     },
     {
+        id: 14,
         name: "Luxury Safari Lodge",
         address: {
             state: "Serengeti",
@@ -695,6 +709,7 @@ const PROPERTYLISTINGSAMPLE = [
         }
     },
     {
+        id: 15,
         name: "Countryside Cottage",
         address: {
             state: "Cotswolds",
@@ -743,6 +758,7 @@ const PROPERTYLISTINGSAMPLE = [
         }
     },
     {
+        id: 16,
         name: "Riverfront Mansion",
         address: {
             state: "Paris",
