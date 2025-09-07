@@ -2,15 +2,20 @@ import Card from "@/components/common/Card";
 import axios from "axios";
 import { useEffect, useState } from "react";
 
+type Property = {
+  id: string | number;
+  // add other fields as needed, e.g. title: string;
+};
+
 export default function Home() {
-  const [properties, setProperties] = useState([]);
+  const [properties, setProperties] = useState<Property[]>([]);
   const [loading, setLoading] = useState(false);
 
   useEffect(() => {
     const fetchProperty = async () => {
       try {
         setLoading(true);
-        const response = await axios.get("/api/properties");
+         const response = await axios.get(`${process.env.NEXT_PUBLIC_API_BASE_URL}/properties`);
         setProperties(response.data);
         setLoading(false);
       } catch (error) {

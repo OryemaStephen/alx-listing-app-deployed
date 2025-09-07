@@ -1458,6 +1458,7 @@ var { g: global, __dirname, k: __turbopack_refresh__, m: module } = __turbopack_
 __turbopack_context__.s({
     "default": (()=>Home)
 });
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$build$2f$polyfills$2f$process$2e$js__$5b$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/next/dist/build/polyfills/process.js [client] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/react/jsx-dev-runtime.js [client] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$components$2f$common$2f$Card$2e$tsx__$5b$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/components/common/Card.tsx [client] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$axios$2f$lib$2f$axios$2e$js__$5b$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/axios/lib/axios.js [client] (ecmascript)");
@@ -1477,7 +1478,7 @@ function Home() {
                 "Home.useEffect.fetchProperty": async ()=>{
                     try {
                         setLoading(true);
-                        const response = await __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$axios$2f$lib$2f$axios$2e$js__$5b$client$5d$__$28$ecmascript$29$__["default"].get("/api/properties");
+                        const response = await __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$axios$2f$lib$2f$axios$2e$js__$5b$client$5d$__$28$ecmascript$29$__["default"].get(`${("TURBOPACK compile-time value", "https://your-api-endpoint.com")}/properties`);
                         setProperties(response.data);
                         setLoading(false);
                     } catch (error) {
@@ -1496,7 +1497,7 @@ function Home() {
             children: "Loading..."
         }, void 0, false, {
             fileName: "[project]/pages/index.tsx",
-            lineNumber: 28,
+            lineNumber: 33,
             columnNumber: 7
         }, this);
     }
@@ -1506,7 +1507,7 @@ function Home() {
             children: "No properties found."
         }, void 0, false, {
             fileName: "[project]/pages/index.tsx",
-            lineNumber: 36,
+            lineNumber: 41,
             columnNumber: 7
         }, this);
     }
@@ -1518,7 +1519,7 @@ function Home() {
                 children: "Properties"
             }, void 0, false, {
                 fileName: "[project]/pages/index.tsx",
-                lineNumber: 43,
+                lineNumber: 48,
                 columnNumber: 5
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1527,18 +1528,18 @@ function Home() {
                         title: ""
                     }, property.id, false, {
                         fileName: "[project]/pages/index.tsx",
-                        lineNumber: 46,
+                        lineNumber: 51,
                         columnNumber: 9
                     }, this))
             }, void 0, false, {
                 fileName: "[project]/pages/index.tsx",
-                lineNumber: 44,
+                lineNumber: 49,
                 columnNumber: 5
             }, this)
         ]
     }, void 0, true, {
         fileName: "[project]/pages/index.tsx",
-        lineNumber: 42,
+        lineNumber: 47,
         columnNumber: 10
     }, this);
 }

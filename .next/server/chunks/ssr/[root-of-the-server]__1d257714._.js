@@ -1016,7 +1016,7 @@ function Home() {
         const fetchProperty = async ()=>{
             try {
                 setLoading(true);
-                const response = await __TURBOPACK__imported__module__$5b$externals$5d2f$axios__$5b$external$5d$__$28$axios$2c$__esm_import$29$__["default"].get("/api/properties");
+                const response = await __TURBOPACK__imported__module__$5b$externals$5d2f$axios__$5b$external$5d$__$28$axios$2c$__esm_import$29$__["default"].get(`${("TURBOPACK compile-time value", "https://your-api-endpoint.com")}/properties`);
                 setProperties(response.data);
                 setLoading(false);
             } catch (error) {
@@ -1033,7 +1033,7 @@ function Home() {
             children: "Loading..."
         }, void 0, false, {
             fileName: "[project]/pages/index.tsx",
-            lineNumber: 28,
+            lineNumber: 33,
             columnNumber: 7
         }, this);
     }
@@ -1043,7 +1043,7 @@ function Home() {
             children: "No properties found."
         }, void 0, false, {
             fileName: "[project]/pages/index.tsx",
-            lineNumber: 36,
+            lineNumber: 41,
             columnNumber: 7
         }, this);
     }
@@ -1055,7 +1055,7 @@ function Home() {
                 children: "Properties"
             }, void 0, false, {
                 fileName: "[project]/pages/index.tsx",
-                lineNumber: 43,
+                lineNumber: 48,
                 columnNumber: 5
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$externals$5d2f$react$2f$jsx$2d$dev$2d$runtime__$5b$external$5d$__$28$react$2f$jsx$2d$dev$2d$runtime$2c$__cjs$29$__["jsxDEV"])("div", {
@@ -1064,18 +1064,18 @@ function Home() {
                         title: ""
                     }, property.id, false, {
                         fileName: "[project]/pages/index.tsx",
-                        lineNumber: 46,
+                        lineNumber: 51,
                         columnNumber: 9
                     }, this))
             }, void 0, false, {
                 fileName: "[project]/pages/index.tsx",
-                lineNumber: 44,
+                lineNumber: 49,
                 columnNumber: 5
             }, this)
         ]
     }, void 0, true, {
         fileName: "[project]/pages/index.tsx",
-        lineNumber: 42,
+        lineNumber: 47,
         columnNumber: 10
     }, this);
 }
