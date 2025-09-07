@@ -129,7 +129,7 @@ export interface CardProps {
 }
 
 export interface ReviewSectionProps {
-  propertyId: string;
+  reviews: Reviews[]; 
 }
 
 export interface Review {
