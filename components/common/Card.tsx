@@ -1,4 +1,3 @@
-/* eslint-disable @next/next/no-img-element */
 import React from "react";
 import { CardProps } from "@/interfaces";
 import { DollarSign, Star } from "lucide-react";
@@ -8,7 +7,7 @@ const Card: React.FC<CardProps> = ({ property }) => {
   return (
     <div className="w-full h-full cursor-pointer hover:shadow-md hover:rounded-lg">
       <img src={HOUSE} alt="house image" className="rounded-lg" />
-      <div className="flex flex-col justify-between gap-4items-center">
+      <div className="flex flex-col justify-between gap-4 items-center">
         <div>
           <h3 className="font-semibold text-[22px]">{property.name}</h3>
         </div>

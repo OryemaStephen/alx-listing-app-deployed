@@ -1,34 +1,12 @@
-import { Review, ReviewSectionProps } from "@/interfaces";
-import axios from "axios";
-import { useState, useEffect } from "react";
+import { Reviews, ReviewSectionProps } from "@/interfaces";
 
-const ReviewSection = ({ propertyId }: ReviewSectionProps) => {
-  const [reviews, setReviews] = useState<Review[]>([]);
-  const [loading, setLoading] = useState(true);
-
-  useEffect(() => {
-    const fetchReviews = async () => {
-      try {
-        const response = await axios.get(`/api/properties/${propertyId}/reviews`);
-        setReviews(response.data);
-      } catch (error) {
-        console.error("Error fetching reviews:", error);
-      } finally {
-        setLoading(false);
-      }
-    };
-
-    fetchReviews();
-  }, [propertyId]);
-
-  if (loading) {
-    return <p>Loading reviews...</p>;
-  }
+const ReviewSection = ({ reviews }: ReviewSectionProps) => {
+  if (!reviews?.length) return <p>No reviews yet.</p>;
 
   return (
     <div>
-      {reviews.map((review) => (
-        <div key={review.id}>
+      {reviews.map((review, index) => (
+        <div key={index}>
           <p>{review.comment}</p>
         </div>
       ))}

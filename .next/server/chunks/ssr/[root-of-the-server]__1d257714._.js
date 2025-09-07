@@ -867,7 +867,7 @@ const CATEGORIES = [
 
 var { g: global, __dirname } = __turbopack_context__;
 {
-/* eslint-disable @next/next/no-img-element */ __turbopack_context__.s({
+__turbopack_context__.s({
     "default": (()=>__TURBOPACK__default__export__)
 });
 var __TURBOPACK__imported__module__$5b$externals$5d2f$react$2f$jsx$2d$dev$2d$runtime__$5b$external$5d$__$28$react$2f$jsx$2d$dev$2d$runtime$2c$__cjs$29$__ = __turbopack_context__.i("[externals]/react/jsx-dev-runtime [external] (react/jsx-dev-runtime, cjs)");
@@ -887,11 +887,11 @@ const Card = ({ property })=>{
                 className: "rounded-lg"
             }, void 0, false, {
                 fileName: "[project]/components/common/Card.tsx",
-                lineNumber: 10,
+                lineNumber: 9,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$externals$5d2f$react$2f$jsx$2d$dev$2d$runtime__$5b$external$5d$__$28$react$2f$jsx$2d$dev$2d$runtime$2c$__cjs$29$__["jsxDEV"])("div", {
-                className: "flex flex-col justify-between gap-4items-center",
+                className: "flex flex-col justify-between gap-4 items-center",
                 children: [
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$externals$5d2f$react$2f$jsx$2d$dev$2d$runtime__$5b$external$5d$__$28$react$2f$jsx$2d$dev$2d$runtime$2c$__cjs$29$__["jsxDEV"])("div", {
                         children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$externals$5d2f$react$2f$jsx$2d$dev$2d$runtime__$5b$external$5d$__$28$react$2f$jsx$2d$dev$2d$runtime$2c$__cjs$29$__["jsxDEV"])("h3", {
@@ -899,12 +899,12 @@ const Card = ({ property })=>{
                             children: property.name
                         }, void 0, false, {
                             fileName: "[project]/components/common/Card.tsx",
-                            lineNumber: 13,
+                            lineNumber: 12,
                             columnNumber: 11
                         }, this)
                     }, void 0, false, {
                         fileName: "[project]/components/common/Card.tsx",
-                        lineNumber: 12,
+                        lineNumber: 11,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$externals$5d2f$react$2f$jsx$2d$dev$2d$runtime__$5b$external$5d$__$28$react$2f$jsx$2d$dev$2d$runtime$2c$__cjs$29$__["jsxDEV"])("div", {
@@ -917,7 +917,7 @@ const Card = ({ property })=>{
                                         className: "w-4 h-4 text-[#FAC02B]"
                                     }, void 0, false, {
                                         fileName: "[project]/components/common/Card.tsx",
-                                        lineNumber: 17,
+                                        lineNumber: 16,
                                         columnNumber: 13
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$externals$5d2f$react$2f$jsx$2d$dev$2d$runtime__$5b$external$5d$__$28$react$2f$jsx$2d$dev$2d$runtime$2c$__cjs$29$__["jsxDEV"])("p", {
@@ -925,13 +925,13 @@ const Card = ({ property })=>{
                                         children: property.price
                                     }, void 0, false, {
                                         fileName: "[project]/components/common/Card.tsx",
-                                        lineNumber: 18,
+                                        lineNumber: 17,
                                         columnNumber: 13
                                     }, this)
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/components/common/Card.tsx",
-                                lineNumber: 16,
+                                lineNumber: 15,
                                 columnNumber: 11
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$externals$5d2f$react$2f$jsx$2d$dev$2d$runtime__$5b$external$5d$__$28$react$2f$jsx$2d$dev$2d$runtime$2c$__cjs$29$__["jsxDEV"])("div", {
@@ -941,7 +941,7 @@ const Card = ({ property })=>{
                                         className: "w-4 h-4 text-[#FAC02B]"
                                     }, void 0, false, {
                                         fileName: "[project]/components/common/Card.tsx",
-                                        lineNumber: 21,
+                                        lineNumber: 20,
                                         columnNumber: 13
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$externals$5d2f$react$2f$jsx$2d$dev$2d$runtime__$5b$external$5d$__$28$react$2f$jsx$2d$dev$2d$runtime$2c$__cjs$29$__["jsxDEV"])("p", {
@@ -949,31 +949,31 @@ const Card = ({ property })=>{
                                         children: property.rating
                                     }, void 0, false, {
                                         fileName: "[project]/components/common/Card.tsx",
-                                        lineNumber: 22,
+                                        lineNumber: 21,
                                         columnNumber: 13
                                     }, this)
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/components/common/Card.tsx",
-                                lineNumber: 20,
+                                lineNumber: 19,
                                 columnNumber: 11
                             }, this)
                         ]
                     }, void 0, true, {
                         fileName: "[project]/components/common/Card.tsx",
-                        lineNumber: 15,
+                        lineNumber: 14,
                         columnNumber: 9
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "[project]/components/common/Card.tsx",
-                lineNumber: 11,
+                lineNumber: 10,
                 columnNumber: 7
             }, this)
         ]
     }, void 0, true, {
         fileName: "[project]/components/common/Card.tsx",
-        lineNumber: 9,
+        lineNumber: 8,
         columnNumber: 5
     }, this);
 };
@@ -1018,7 +1018,6 @@ function Home() {
                 setLoading(true);
                 const response = await __TURBOPACK__imported__module__$5b$externals$5d2f$axios__$5b$external$5d$__$28$axios$2c$__esm_import$29$__["default"].get(`${("TURBOPACK compile-time value", "https://your-api-endpoint.com")}/properties`);
                 setProperties(response.data);
-                setLoading(false);
             } catch (error) {
                 console.error("Error fetching properties:", error);
             } finally{
@@ -1033,7 +1032,7 @@ function Home() {
             children: "Loading..."
         }, void 0, false, {
             fileName: "[project]/pages/index.tsx",
-            lineNumber: 33,
+            lineNumber: 30,
             columnNumber: 7
         }, this);
     }
@@ -1043,7 +1042,7 @@ function Home() {
             children: "No properties found."
         }, void 0, false, {
             fileName: "[project]/pages/index.tsx",
-            lineNumber: 41,
+            lineNumber: 38,
             columnNumber: 7
         }, this);
     }
@@ -1055,28 +1054,27 @@ function Home() {
                 children: "Properties"
             }, void 0, false, {
                 fileName: "[project]/pages/index.tsx",
-                lineNumber: 48,
-                columnNumber: 5
+                lineNumber: 46,
+                columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$externals$5d2f$react$2f$jsx$2d$dev$2d$runtime__$5b$external$5d$__$28$react$2f$jsx$2d$dev$2d$runtime$2c$__cjs$29$__["jsxDEV"])("div", {
                 children: properties.map((property)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$externals$5d2f$react$2f$jsx$2d$dev$2d$runtime__$5b$external$5d$__$28$react$2f$jsx$2d$dev$2d$runtime$2c$__cjs$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$common$2f$Card$2e$tsx__$5b$ssr$5d$__$28$ecmascript$29$__["default"], {
-                        property: property,
-                        title: ""
+                        property: property
                     }, property.id, false, {
                         fileName: "[project]/pages/index.tsx",
-                        lineNumber: 51,
-                        columnNumber: 9
+                        lineNumber: 49,
+                        columnNumber: 11
                     }, this))
             }, void 0, false, {
                 fileName: "[project]/pages/index.tsx",
-                lineNumber: 49,
-                columnNumber: 5
+                lineNumber: 47,
+                columnNumber: 7
             }, this)
         ]
     }, void 0, true, {
         fileName: "[project]/pages/index.tsx",
-        lineNumber: 47,
-        columnNumber: 10
+        lineNumber: 45,
+        columnNumber: 5
     }, this);
 }
 __turbopack_async_result__();

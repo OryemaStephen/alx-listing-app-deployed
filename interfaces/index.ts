@@ -3,7 +3,9 @@ export interface LayoutProps {
 }
 
 export interface CardProps {
-  title: string;
+  property: PropertyProps;
+  activeFilter?: string;
+  setActiveFilter?: (filter: string) => void;
 }
 
 export interface ButtonProps {
@@ -48,18 +50,38 @@ export interface Host {
   }
 
 export interface PropertyProps {
+  id: string | number; 
   name: string;
-  address: Address;
-  description: string;
+  address: {
+    state: string;
+    city: string;
+    country: string;
+  };
   rating: number;
   category: string[];
   price: number;
-  offers: Offers;
-  reviews: Reviews[]
+  offers: {
+    bed: string;
+    shower: string;
+    occupants: string;
+  };
   image: string[];
   discount: string;
-  host: Host;
+  description: string;
+  reviews: {
+    name: string;
+    avatar: string;
+    rating: number;
+    comment: string;
+  }[];
+  host?: {
+    name: string;
+    avatar: string;
+    bio: string;
+    joined: string;
+  };
 }
+
 
 export interface InputProps {
   label: string;
