@@ -4,8 +4,9 @@ import Image from "next/image";
 import ReviewSection from "./ReviewSection";
 import BookingSection from "./BookingSection";
 
-
-const PropertyDetail: React.FC<{ property: PropertyProps }> = ({ property }) => {
+const PropertyDetail: React.FC<{ property: PropertyProps }> = ({
+  property,
+}) => {
   const [activeTab, setActiveTab] = useState("Description");
 
   const tabs = ["Description", "What We Offer", "Reviews", "About Host"];
@@ -64,7 +65,9 @@ const PropertyDetail: React.FC<{ property: PropertyProps }> = ({ property }) => 
             )}
             {activeTab === "What We Offer" && (
               <div>
-                <h2 className="text-2xl font-semibold">What this place offers</h2>
+                <h2 className="text-2xl font-semibold">
+                  What this place offers
+                </h2>
                 <ul className="flex flex-wrap gap-4 mt-2">
                   {property.category.map((amenity, index) => (
                     <li key={index} className="p-2 bg-gray-200 rounded-md">
@@ -79,25 +82,25 @@ const PropertyDetail: React.FC<{ property: PropertyProps }> = ({ property }) => 
                 <ReviewSection reviews={property.reviews} />
               </div>
             )}
-            {activeTab === "About Host" && (
+            {activeTab === "About Host" && property.host && (
               <div>
                 <h2 className="text-2xl font-semibold">About the Host</h2>
                 <div className="flex items-center mt-4">
                   <Image
-                    src={property.host.avatar}
-                    alt={property.host.name}
+                    src={property.host?.avatar || "/default-avatar.png"}
+                    alt={property.host?.name || "Unknown host"}
                     width={64}
                     height={64}
                     className="w-16 h-16 mr-4 rounded-full"
                   />
                   <div>
-                    <p className="font-bold">{property.host.name}</p>
+                    <p className="font-bold">{property.host?.name}</p>
                     <p className="text-sm text-gray-600">
-                      Joined {property.host.joined}
+                      Joined {property.host?.joined}
                     </p>
                   </div>
                 </div>
-                <p className="mt-2 text-gray-600">{property.host.bio}</p>
+                <p className="mt-2 text-gray-600">{property.host?.bio}</p>
               </div>
             )}
           </div>
